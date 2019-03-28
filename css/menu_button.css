@@ -1,0 +1,105 @@
+.menu_button {
+	background-color: transparent;
+	position: absolute;
+	top: 0rem;
+	right: 0rem;
+	height: 7rem;
+	width: 7rem;
+	z-index: 999;
+}
+
+.line1 {
+	height: 0.4rem;
+	width: 4.3rem;
+	margin: 3rem 2rem 0rem 0rem;
+	background-color: #ffffff;
+	opacity: 0.7;
+}
+
+.line2 {
+	height: 0.4rem;
+	width: 4.3rem;
+	margin: 1rem 2rem 0rem 0rem;
+	background-color: #ffffff;
+	opacity: 0.7;
+}
+
+.menu_button:hover .line1 {
+	transform: rotate(-37deg);
+	transform-origin: right;
+}
+
+.menu_button:hover .line2 {
+	transform: rotate(37deg) translate(0.2rem,-0.2rem);
+	transform-origin: center;
+}
+
+#menu {
+	background-color: pink;
+	position: absolute;
+	top: 0rem;
+	height: 60.25rem;
+	width: 0rem;
+	z-index: 100;
+	transition: width .4s linear 0s;
+	font-family: sans-serif;
+	font-size: 14rem;
+	color: #ffffff;
+	opacity: 0;
+	overflow: hidden;
+}
+
+.inside_menu{
+	position: absolute;
+	padding: 10rem 25rem;
+}
+
+.inside_menu p {
+	margin: 5rem;
+	text-align: center;
+	letter-spacing: 1rem;
+	opacity: 0.6;
+	z-index: 190;
+}
+
+.inside_menu p:nth-child(1):hover, 
+.inside_menu p:nth-child(2):hover, 
+.inside_menu p:nth-child(3):hover  {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.inside_menu img{
+	position: absolute;
+	z-index: 150;
+	opacity: 0;
+	box-shadow: 0 0 0 3rem black inset;
+}
+
+.menu_img1, .menu_img3, .menu_img5 {
+	height: 50rem;
+	top:-40rem;
+	left: 35rem;
+}
+
+.menu_img2, .menu_img4, .menu_img6 {
+	height: 30rem;
+	top: 50rem;
+	left: 73rem;
+}
+
+.inside_menu p:nth-child(1):hover ~ .menu_img1,
+.inside_menu p:nth-child(2):hover ~ .menu_img3,
+.inside_menu p:nth-child(3):hover ~ .menu_img5 {
+	opacity: 0.6;
+	transform: translateY(45rem);
+	transition: all 0.6s ease-out 0s; 
+}
+
+.inside_menu p:nth-child(1):hover ~ .menu_img2,
+.inside_menu p:nth-child(2):hover ~ .menu_img4,
+.inside_menu p:nth-child(3):hover ~ .menu_img6 {
+	opacity: 0.6;
+	transform: translateY(-35rem);
+	transition: all 0.6s ease-out 0s; 
+}
