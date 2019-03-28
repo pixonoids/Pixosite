@@ -1,10 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #0d3745;
+}
+
+.loader {
+	height: 100vh;
+	width: 100%;
+	display: inline-block;
+}
+
 .in_main {
 	display: block;
 	position: absolute;
-	top: 22rem;
-	left: 37.5rem;
+    margin: 18% 0% 0% 35%;
 	animation: shrink 0.7s linear 4s forwards;
-	z-index: 50;
+	z-index: 10000;
 }
 
 .wrapper{
@@ -15,7 +30,7 @@
 }
 
 .in_main img {
-	width: 22vh;
+	width: 6rem;
 	animation:logo_anime 3s forwards;
 }
 
@@ -36,16 +51,15 @@
 	}
 
 	100% {
-		transform: translateX(-6rem) rotate(-30deg);
+		transform: translateX(-2.5rem) rotate(-30deg);
 	}
 }
 
 .in_main span {
-	/*color: #758387;*/
 	color: #eeeeee;
 	opacity: 0;	
-	font-size: 12rem;
-	letter-spacing: 3rem; 
+	font-size: 3rem;
+    letter-spacing: 1rem; 
 	font-family: sans-serif;
 	animation: heading_anime 1s linear 2s forwards;
 }
@@ -57,7 +71,7 @@
 
 	100% {
 		opacity: 1;
-		transform: translateX(-4.4rem);
+		transform: translateX(-2rem);
 	}
 }
 
@@ -68,8 +82,6 @@
 
 	100% {
 		transform-origin: left;
-		top: -5%;
-		left: 3%;
-		transform: translate(0%,-2%) scale(0.3);
+		transform: translate(-70%,-190%) scale(0.3);
 	}
 }

@@ -1,0 +1,91 @@
+.about {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100vh;
+	width: 100%;
+	background-color: transparent;
+}
+
+.main_img {
+	opacity: 0.2;
+	position: absolute;
+	width: 10%;
+}
+
+@keyframes img_pop {
+	0% {
+		opacity: 0.2;
+		transform: scale(0);
+	}
+
+	100% {
+		opacity: 0.2;
+		transform: scale(1);
+	}
+}
+
+.main_img1 {
+    top: 20%;
+    left: 50%;
+}
+
+.main_img2 {
+	top: 30%;
+    left: 30%;
+    width: 12%;
+}
+
+.main_img3 {
+    top: 77%;
+    left: 43%;
+    width: 15%;
+}
+
+.main_img4 {
+    top: 50%;
+    left: 60%;
+    width: 15%
+}
+
+.main_img5 {
+	top: 40%;
+    left: 40%;
+    width: 16%;
+}
+
+.main_img6 {
+	top: 77%;
+    left: 53%;
+}
+
+.main_img7 {
+
+}
+
+.main_img8 {
+    top: 45%;
+    left: 54%;
+}
+
+.main_img9 {
+
+}
+
+.main_img10 {
+    top: 65%;
+    left: 38%;
+    width: 5%;
+}
+
+.main_img11 {
+
+}
+
+.main_img12 {
+
+}
+
+.main_img13 {
+
+}
