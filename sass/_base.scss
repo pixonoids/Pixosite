@@ -1,0 +1,34 @@
+// ------------
+// CLEARFIXES
+// ------------
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// -------------
+// BASIC STYLES
+// -------------
+
+// html {
+//     box-sizing: border-box;
+//     font-size: 62.5%; // 10px/16px = 62.5% --> 1rem = 10px
+    // @media only screen and (max-width: $bp-largest) {
+    //     font-size: 50%;
+    // }
+// }
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    width: 100%;
+    // overflow-y: hidden;
+    height: 100%;
+    background: black;
+}
+
+a {text-decoration: none;}
