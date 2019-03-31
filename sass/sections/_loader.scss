@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #0d3745;
+}
+
+.loader {
+	height: 100vh;
+	width: 100%;
+	display: inline-block;
+}
+
+.in_main {
+	display: block;
+	position: absolute;
+    margin: 20% 0% 0% 34%;
+	animation: shrink 0.7s linear 4s forwards;
+	z-index: 10000;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.in_main img {
+	width: 6rem;
+	animation:logo_anime 3s forwards;
+}
+
+@keyframes logo_anime {
+	0% {
+		opacity: 0;
+		transform: scale(0) rotate(-100deg);
+	}
+
+	30% {
+		opacity: 0.2;
+		transform: scale(1.5) rotate(90deg);
+	}
+
+	60% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		transform: translateX(-2.5rem) rotate(-30deg);
+	}
+}
+
+.in_main span {
+	color: #eeeeee;
+	opacity: 0;	
+	font-size: 3rem;
+    letter-spacing: 1rem; 
+	font-family: sans-serif;
+	animation: heading_anime 1s linear 2s forwards;
+}
+
+@keyframes heading_anime {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(-2rem);
+	}
+}
+
+@keyframes shrink {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform-origin: left;
+		transform: translate(-68%,-210%) scale(0.3);
+	}
+}
